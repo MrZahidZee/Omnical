@@ -15,14 +15,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Calculator All In One - Free Online Smart Calculator, Unit & Currency Converter</title>
-    <meta name="description" content="Calculator All In One is a free high-precision online math & scientific calculator, live currency rates converter, land area (Marla & Kanal), distance, temperature, and weight converter.">
-    <meta name="keywords" content="calculator all in one, scientific calculator online, free unit converter, currency rates live, marla to sq ft calculator, feet to inches, kg to lbs, celsius to fahrenheit">
-    <meta name="author" content="Calculator All In One">
+    <meta name="description" content="Calculator All In One is a free high-precision online math & scientific calculator, live currency rates converter, land area, distance, temperature, and weight converter. Created by Muhammad Zahid (Mr. Zee) - AI Filmmaker & Tech Creator.">
+    <meta name="keywords" content="calculator all in one, scientific calculator online, free unit converter, currency rates live, marla to sq ft calculator, Muhammad Zahid, Mr. Zee, AI short film creator, ZeeTec">
+    <meta name="author" content="Muhammad Zahid (Mr. Zee)">
     <meta name="robots" content="index, follow">
+
+    <!-- Favicon / Profile Logo for Google Search & Browser Tab -->
+    <link rel="icon" type="image/jpeg" href="https://smart-calculator-all-in-one.github.io/calculator/muhammad-zahid-mr-zee.jpg">
+    <link rel="apple-touch-icon" href="https://smart-calculator-all-in-one.github.io/calculator/muhammad-zahid-mr-zee.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Google Creator & Professional Profile Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Smart Calculator All-in-One",
+          "url": "https://smart-calculator-all-in-one.github.io/calculator/",
+          "image": "https://smart-calculator-all-in-one.github.io/calculator/muhammad-zahid-mr-zee.jpg",
+          "creator": {
+            "@id": "https://smart-calculator-all-in-one.github.io/calculator/#creator"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Calculator All In One",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://smart-calculator-all-in-one.github.io/calculator/muhammad-zahid-mr-zee.jpg"
+            }
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://smart-calculator-all-in-one.github.io/calculator/#creator",
+          "name": "Muhammad Zahid",
+          "alternateName": "Mr. Zee",
+          "jobTitle": "Digital Content Creator, AI Filmmaker, Web Developer & Certified Mechanical Draftsman",
+          "image": "https://smart-calculator-all-in-one.github.io/calculator/muhammad-zahid-mr-zee.jpg",
+          "birthPlace": {
+            "@type": "Place",
+            "name": "Lodhran, Pakistan"
+          },
+          "description": "Muhammad Zahid (Mr. Zee) is a digital content creator, AI filmmaker, tech analyst, web developer, and certified Mechanical Draftsman from Lodhran. He creates AI-generated short films, cinematic videos, 3D smartphone concept advertisements, and practical web tools.",
+          "url": "https://smart-calculator-all-in-one.github.io/calculator/",
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Diploma / Certification",
+              "name": "2-Year Course in Mechanical Drafting (Draftsman Mechanical) - Lahore"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Certificate",
+              "name": "Intermediate in Computer Science (ICS)"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Certificate",
+              "name": "Matriculation - Lodhran"
+            }
+          ],
+          "knowsAbout": [
+            "Artificial Intelligence Short Films",
+            "Cinematic Filmmaking",
+            "Dola AI",
+            "Seedance AI",
+            "Fantasy Stories & Smartphone Ads",
+            "Smartphone 3D Concept Renders",
+            "YouTube Growth and SEO",
+            "Video Editing and Thumbnail Design",
+            "Web Development and Computer Science",
+            "Mechanical Drafting and AutoCAD",
+            "HVAC Duct Design and Airflow Calculations"
+          ],
+          "sameAs": [
+            "https://www.youtube.com/@zeetec1"
+          ]
+        }
+      ]
+    }
+    </script>
 
     <style>
         :root {
@@ -84,7 +161,7 @@
         }
 
         .brand-logo {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             font-weight: 800;
             color: #c084fc;
             display: flex;
@@ -92,6 +169,14 @@
             gap: 10px;
             text-decoration: none;
             text-shadow: 0 0 16px rgba(192, 132, 252, 0.5);
+        }
+
+        .brand-logo img {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #a855f7;
         }
 
         .nav-links {
@@ -305,6 +390,67 @@
             box-shadow: 0 0 20px rgba(124, 58, 237, 0.4);
         }
 
+        /* Calculation History Panel Styling */
+        .history-panel {
+            background: rgba(8, 11, 24, 0.9);
+            border: 1px solid var(--border-glass);
+            border-radius: 18px;
+            padding: 16px;
+            margin-top: 18px;
+            max-height: 180px;
+            overflow-y: auto;
+        }
+
+        .history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .clear-history-btn {
+            background: transparent;
+            border: none;
+            color: #ef4444;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .clear-history-btn:hover {
+            text-decoration: underline;
+        }
+
+        .history-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .history-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            font-family: 'JetBrains Mono', monospace;
+            padding: 6px 10px;
+            background: rgba(22, 29, 58, 0.5);
+            border-radius: 8px;
+        }
+
+        .history-empty {
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.85rem;
+            padding: 10px 0;
+            font-style: italic;
+        }
+
         .converter-body {
             display: flex;
             flex-direction: column;
@@ -405,7 +551,7 @@
             text-shadow: 0 0 16px rgba(192, 132, 252, 0.5);
         }
 
-        /* High-Value Educational & Informational Guide Styling */
+        /* SEO & Detailed Creator Bio Content Styling */
         .seo-content {
             width: 100%;
             max-width: 960px;
@@ -422,6 +568,31 @@
         .seo-content h3 { font-size: 1.35rem; color: #c084fc; margin: 32px 0 14px; }
         .seo-content h4 { font-size: 1.1rem; color: #e2e8f0; margin: 20px 0 10px; }
         .seo-content p { color: var(--text-dim); font-size: 0.98rem; margin-bottom: 16px; }
+
+        .creator-box {
+            background: rgba(22, 29, 60, 0.7);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 20px;
+            padding: 28px;
+            margin-bottom: 32px;
+        }
+
+        .creator-profile-header {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .creator-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #a855f7;
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+        }
 
         .features-grid {
             display: grid;
@@ -461,6 +632,7 @@
         .faq-q { font-weight: 700; color: #fff; font-size: 1.05rem; }
         .faq-a { color: var(--text-dim); font-size: 0.95rem; margin-top: 6px; }
 
+        /* Footer organized for Google AdSense Policy Compliance */
         footer {
             width: 100%;
             max-width: 960px;
@@ -494,7 +666,8 @@
 
 <header>
     <a href="index.html" class="brand-logo">
-        <span>⚡</span> Calculator All In One
+        <img src="muhammad-zahid-mr-zee.jpg" alt="Mr. Zee Logo">
+        <span>Smart Calculator All-In-One</span>
     </a>
     <nav class="nav-links">
         <a onclick="switchTab('calc')">Calculator</a>
@@ -516,7 +689,7 @@
 
 <main class="workspace-card" id="mainWorkspace">
 
-    <!-- Math & Scientific Calculator Interface -->
+    <!-- Math & Scientific Calculator Interface with History -->
     <section id="tab-calc">
         <div class="mode-toggle-bar">
             <button type="button" class="mode-btn active" id="btnModeBasic" onclick="setCalcMode('basic')">Basic</button>
@@ -567,6 +740,17 @@
             <button type="button" class="btn" onclick="calcDot()">.</button>
             <button type="button" class="btn btn-equal" onclick="calcEquals()">=</button>
             <button type="button" class="btn btn-op" onclick="calcOp('+')">+</button>
+        </div>
+
+        <!-- Calculation History Section -->
+        <div class="history-panel">
+            <div class="history-header">
+                <span>📜 Calculation History (Hisab Kitab)</span>
+                <button type="button" class="clear-history-btn" onclick="clearHistory()">Clear History</button>
+            </div>
+            <div id="historyContainer">
+                <div class="history-empty">No calculations yet.</div>
+            </div>
         </div>
     </section>
 
@@ -775,8 +959,30 @@
 
 </main>
 
-<!-- Comprehensive Measurement, Scientific & Educational Guide -->
+<!-- Comprehensive Measurement, Scientific & Detailed Creator Bio Guide -->
 <article class="seo-content">
+    
+    <!-- Detailed Creator Profile Box -->
+    <div class="creator-box">
+        <div class="creator-profile-header">
+            <img src="muhammad-zahid-mr-zee.jpg" alt="Muhammad Zahid (Mr. Zee)" class="creator-img">
+            <div>
+                <h3 style="margin: 0 0 6px 0; color: #fff; font-size: 1.4rem;">About the Creator: Muhammad Zahid (Mr. Zee)</h3>
+                <p style="margin: 0; color: #c084fc; font-weight: 600; font-size: 0.95rem;">
+                    Digital Content Creator | AI Filmmaker | Web Developer | Certified Mechanical Draftsman
+                </p>
+            </div>
+        </div>
+        <div style="color: var(--text-dim); font-size: 0.96rem; line-height: 1.8;">
+            <p style="margin-bottom: 12px;">
+                <strong>Muhammad Zahid</strong>, professionally known as <strong>Mr. Zee</strong>, is a multidisciplinary Digital Content Creator, AI Filmmaker, Tech Analyst, Web Developer, and Certified Mechanical Draftsman originally hailing from <strong>Lodhran</strong>. He completed his Matriculation in Lodhran and Intermediate in Computer Science (ICS), building a strong technical foundation in software and technology. To expand his engineering expertise, he earned a formal <strong>2-Year Certification in Mechanical Drafting (Draftsman Mechanical) from Lahore</strong>, mastering AutoCAD, mechanical design, and commercial HVAC systems.
+            </p>
+            <p style="margin-bottom: 0;">
+                As the creator behind the YouTube channel <strong>ZeeTec (@zeetec1)</strong>, Mr. Zee pushes the boundaries of digital media by producing AI-generated short films, cinematic fantasy stories, smartphone advertisements, flagship tech leaks, and 3D concept renders using advanced tools like <strong>Seedance</strong> and <strong>Dola AI</strong>. Alongside video editing, thumbnail design, and SEO strategy, he developed the <strong>Smart Calculator All-in-One</strong> web platform to deliver fast, practical, and high-precision digital tools.
+            </p>
+        </div>
+    </div>
+
     <h2>Comprehensive Measurement, Scientific & Mathematical Guide</h2>
     
     <p>
@@ -966,13 +1172,39 @@
         }
     }
 
-    // Calculator Logic
+    // Calculator Logic & History
     var calcInput = '0';
     var calcPrev = '';
+    var calcHistory = [];
 
     function updateCalcDisplay() {
         document.getElementById('calcRes').textContent = calcInput;
         document.getElementById('calcExp').textContent = calcPrev || ' ';
+    }
+
+    function addHistory(expression, result) {
+        calcHistory.unshift({ expr: expression, res: result });
+        if (calcHistory.length > 10) calcHistory.pop(); // Keep last 10 entries
+        renderHistory();
+    }
+
+    function renderHistory() {
+        var container = document.getElementById('historyContainer');
+        if (calcHistory.length === 0) {
+            container.innerHTML = '<div class="history-empty">No calculations yet.</div>';
+            return;
+        }
+        var html = '<ul class="history-list">';
+        for (var i = 0; i < calcHistory.length; i++) {
+            html += '<li class="history-item"><span>' + calcHistory[i].expr + '</span><strong>= ' + calcHistory[i].res + '</strong></li>';
+        }
+        html += '</ul>';
+        container.innerHTML = html;
+    }
+
+    function clearHistory() {
+        calcHistory = [];
+        renderHistory();
     }
 
     function calcNum(val) {
@@ -1011,6 +1243,7 @@
     function calcSci(fn) {
         var current = parseFloat(calcInput) || 0;
         var res = 0;
+        var exprText = fn + '(' + current + ')';
         try {
             if (fn === 'sin') res = Math.sin(current * Math.PI / 180);
             else if (fn === 'cos') res = Math.cos(current * Math.PI / 180);
@@ -1019,10 +1252,14 @@
             else if (fn === 'ln') res = Math.log(current);
             else if (fn === 'sqrt') res = Math.sqrt(current);
             else if (fn === 'sq') res = Math.pow(current, 2);
-            else if (fn === 'pi') res = Math.PI;
+            else if (fn === 'pi') { res = Math.PI; exprText = 'π'; }
 
-            if (isNaN(res) || !isFinite(res)) calcInput = 'Error';
-            else calcInput = String(parseFloat(res.toFixed(8)));
+            if (isNaN(res) || !isFinite(res)) {
+                calcInput = 'Error';
+            } else {
+                calcInput = String(parseFloat(res.toFixed(8)));
+                addHistory(exprText, calcInput);
+            }
         } catch(e) {
             calcInput = 'Error';
         }
@@ -1053,7 +1290,9 @@
             if (isNaN(evalResult) || !isFinite(evalResult)) {
                 calcInput = 'Error';
             } else {
-                calcInput = String(parseFloat(evalResult.toFixed(8)));
+                var finalRes = String(parseFloat(evalResult.toFixed(8)));
+                addHistory(fullExpr, finalRes);
+                calcInput = finalRes;
             }
             calcPrev = '';
             updateCalcDisplay();
@@ -1171,6 +1410,7 @@
         convertArea();
         convertTemp();
         updateCalcDisplay();
+        renderHistory();
     };
 </script>
 </body>
