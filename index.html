@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-theme="dark">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WEWH8K2PP0"></script>
@@ -14,9 +14,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Calculator All In One - Free Online Smart Calculator, Unit & Currency Converter</title>
-    <meta name="description" content="Calculator All In One is a free high-precision online math & scientific calculator, live currency rates converter, land area, distance, temperature, and weight converter. Created by Muhammad Zahid (Mr. Zee) - AI Filmmaker & Tech Creator.">
-    <meta name="keywords" content="calculator all in one, scientific calculator online, free unit converter, currency rates live, marla to sq ft calculator, Muhammad Zahid, Mr. Zee, AI short film creator, ZeeTec">
+    <!-- Strong SEO Title & Meta Description -->
+    <title>Free Online Calculator Pakistan | Marla, Tola, Currency & Scientific Calculator</title>
+    <meta name="description" content="Use the best free online calculator Pakistan for Marla calculator (225 & 272.25 sq ft), Tola converter (Tola to Gram gold), live currency converter PKR, and scientific calculator. Created by Muhammad Zahid (Mr. Zee).">
+    <meta name="keywords" content="Marla calculator, Tola converter, free online calculator Pakistan, currency converter PKR, Tola to Gram, Marla to sq ft calculator, scientific calculator online, Muhammad Zahid, Mr. Zee, AI short film creator, ZeeTec">
     <meta name="author" content="Muhammad Zahid (Mr. Zee)">
     <meta name="robots" content="index, follow">
 
@@ -26,7 +27,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
 
     <!-- Google Creator & Professional Profile Schema Markup -->
     <script type="application/ld+json">
@@ -102,29 +103,76 @@
     </script>
 
     <style>
-        :root {
-            --bg-body: #060814;
-            --card-bg: rgba(13, 17, 34, 0.92);
-            --border-glass: rgba(86, 98, 160, 0.32);
-            --text-main: #f1f5f9;
-            --text-dim: #8b99bd;
-            --accent: #a855f7;
-            --accent-glow: rgba(168, 85, 247, 0.4);
+        /* DARK MODE (Default Theme) */
+        :root, [data-theme="dark"] {
+            --bg-gradient: radial-gradient(circle at 50% 0%, #172554 0%, #090d16 55%, #030712 100%);
+            --header-bg: rgba(15, 23, 42, 0.88);
+            --card-bg: rgba(15, 23, 42, 0.94);
+            --panel-bg: rgba(9, 13, 24, 0.95);
+            --border-color: rgba(148, 163, 184, 0.22);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --brand-color: #38bdf8;
+            --accent-purple: #c084fc;
             
-            --btn-num-bg: rgba(22, 29, 58, 0.85);
-            --btn-num-border: rgba(99, 115, 180, 0.3);
-            --btn-fn: linear-gradient(135deg, #4f46e5, #6366f1);
-            --btn-fn-border: rgba(129, 140, 248, 0.4);
-            --btn-sci: rgba(30, 41, 79, 0.85);
-            --btn-sci-border: rgba(99, 115, 180, 0.35);
-            --btn-op: linear-gradient(135deg, #1d4ed8, #2563eb);
-            --btn-op-border: rgba(96, 165, 250, 0.4);
-            --btn-del: linear-gradient(135deg, #2563eb, #3b82f6);
-            --btn-del-border: rgba(147, 197, 253, 0.4);
-            --btn-ac: linear-gradient(135deg, #be123c, #e11d48);
-            --btn-ac-border: rgba(251, 113, 133, 0.45);
-            --btn-equal: linear-gradient(135deg, #6366f1, #7c3aed);
-            --btn-equal-border: rgba(192, 132, 252, 0.45);
+            /* Calculator Buttons - Dark */
+            --btn-num-bg: #1e293b;
+            --btn-num-hover: #334155;
+            --btn-num-text: #f8fafc;
+            --btn-num-border: rgba(148, 163, 184, 0.2);
+            
+            --btn-sci-bg: #0f172a;
+            --btn-sci-text: #38bdf8;
+            
+            --btn-fn-bg: #334155;
+            --btn-fn-text: #e2e8f0;
+            
+            --btn-op-bg: linear-gradient(135deg, #2563eb, #1d4ed8);
+            --btn-del-bg: linear-gradient(135deg, #f59e0b, #d97706);
+            --btn-ac-bg: linear-gradient(135deg, #ef4444, #dc2626);
+            --btn-eq-bg: linear-gradient(135deg, #10b981, #059669);
+            
+            --shadow-card: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            --shadow-btn: 0 4px 6px -1px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            --pk-badge-bg: rgba(16, 185, 129, 0.15);
+            --pk-badge-border: rgba(16, 185, 129, 0.45);
+            --pk-badge-text: #34d399;
+        }
+
+        /* LIGHT MODE (Soft Modern Colors) */
+        [data-theme="light"] {
+            --bg-gradient: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 40%, #f8fafc 100%);
+            --header-bg: rgba(255, 255, 255, 0.92);
+            --card-bg: #ffffff;
+            --panel-bg: #f1f5f9;
+            --border-color: #cbd5e1;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --brand-color: #0284c7;
+            --accent-purple: #7c3aed;
+
+            /* Calculator Buttons - Soft Light */
+            --btn-num-bg: #f8fafc;
+            --btn-num-hover: #e2e8f0;
+            --btn-num-text: #0f172a;
+            --btn-num-border: #cbd5e1;
+
+            --btn-sci-bg: #e0f2fe;
+            --btn-sci-text: #0369a1;
+
+            --btn-fn-bg: #e2e8f0;
+            --btn-fn-text: #1e293b;
+
+            --btn-op-bg: linear-gradient(135deg, #3b82f6, #2563eb);
+            --btn-del-bg: linear-gradient(135deg, #f59e0b, #d97706);
+            --btn-ac-bg: linear-gradient(135deg, #ef4444, #dc2626);
+            --btn-eq-bg: linear-gradient(135deg, #10b981, #059669);
+
+            --shadow-card: 0 20px 40px -15px rgba(15, 23, 42, 0.12);
+            --shadow-btn: 0 3px 6px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            --pk-badge-bg: rgba(5, 150, 105, 0.1);
+            --pk-badge-border: rgba(5, 150, 105, 0.4);
+            --pk-badge-text: #047857;
         }
 
         * {
@@ -136,164 +184,219 @@
         }
 
         body {
-            background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #0d1026 50%, var(--bg-body) 100%);
+            background: var(--bg-gradient);
             color: var(--text-main);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 24px 14px;
+            padding: 12px 12px 30px;
+            transition: background 0.3s ease, color 0.3s ease;
         }
 
+        /* Compact Header so Calculator is immediately visible */
         header {
             width: 100%;
-            max-width: 960px;
+            max-width: 980px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 16px 26px;
-            background: rgba(15, 20, 42, 0.85);
-            border: 1px solid var(--border-glass);
-            border-radius: 22px;
-            margin-bottom: 24px;
-            backdrop-filter: blur(20px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            padding: 10px 18px;
+            background: var(--header-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            margin-bottom: 10px;
+            backdrop-filter: blur(16px);
+            box-shadow: var(--shadow-card);
+            transition: all 0.3s ease;
         }
 
         .brand-logo {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             font-weight: 800;
-            color: #c084fc;
+            color: var(--brand-color);
             display: flex;
             align-items: center;
             gap: 10px;
             text-decoration: none;
-            text-shadow: 0 0 16px rgba(192, 132, 252, 0.5);
         }
 
         .brand-logo img {
-            width: 38px;
-            height: 38px;
+            width: 34px;
+            height: 34px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #a855f7;
+            border: 2px solid var(--brand-color);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 14px;
         }
 
         .nav-links {
             display: flex;
-            gap: 20px;
-            font-size: 0.95rem;
-            font-weight: 500;
+            gap: 14px;
+            font-size: 0.88rem;
+            font-weight: 600;
         }
 
         .nav-links a {
-            color: var(--text-dim);
+            color: var(--text-muted);
             text-decoration: none;
             cursor: pointer;
-            transition: all 0.2s;
+            transition: color 0.2s;
         }
 
         .nav-links a:hover {
-            color: #c084fc;
+            color: var(--brand-color);
         }
 
+        /* Theme Toggle Button (Dark / Light Mode) */
+        .theme-toggle-btn {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 7px 13px;
+            border-radius: 12px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-btn);
+        }
+
+        .theme-toggle-btn:hover {
+            border-color: var(--brand-color);
+            transform: translateY(-1px);
+        }
+
+        /* H1 Heading for SEO */
+        .main-heading {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 10px;
+            max-width: 980px;
+            line-height: 1.3;
+        }
+
+        .main-heading strong {
+            color: var(--text-main);
+        }
+
+        /* Highlighted Navigation Tabs */
         .tabs-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
             justify-content: center;
             width: 100%;
-            max-width: 960px;
-            margin-bottom: 26px;
+            max-width: 980px;
+            margin-bottom: 14px;
         }
 
         .tab-btn {
-            background: rgba(22, 29, 60, 0.6);
-            border: 1px solid var(--border-glass);
-            color: var(--text-dim);
-            padding: 10px 22px;
-            border-radius: 16px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 9px 15px;
+            border-radius: 14px;
             cursor: pointer;
-            font-size: 0.92rem;
-            font-weight: 600;
+            font-size: 0.88rem;
+            font-weight: 700;
             transition: all 0.2s ease;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
+            box-shadow: var(--shadow-btn);
+        }
+
+        .tab-btn.pk-special {
+            border-color: var(--pk-badge-border);
+            background: var(--pk-badge-bg);
+            color: var(--pk-badge-text);
         }
 
         .tab-btn:hover {
-            background: rgba(35, 46, 92, 0.8);
-            color: #fff;
+            transform: translateY(-2px);
+            color: var(--text-main);
+            border-color: var(--brand-color);
         }
 
         .tab-btn.active {
-            background: linear-gradient(135deg, #6366f1, #9333ea);
-            color: #ffffff;
-            border-color: rgba(192, 132, 252, 0.6);
-            box-shadow: 0 0 25px rgba(147, 51, 234, 0.45);
+            background: linear-gradient(135deg, #2563eb, #10b981);
+            color: #ffffff !important;
+            border-color: transparent;
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
         }
 
+        /* Main Calculator Card - Centered, Large & First Thing Visible */
         .workspace-card {
             width: 100%;
-            max-width: 530px;
+            max-width: 500px;
             background: var(--card-bg);
-            border: 1px solid var(--border-glass);
-            border-radius: 30px;
-            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(24px);
-            padding: 24px;
-            margin-bottom: 36px;
-            transition: max-width 0.25s ease;
+            border: 1px solid var(--border-color);
+            border-radius: 26px;
+            box-shadow: var(--shadow-card);
+            padding: 20px;
+            margin-bottom: 28px;
+            transition: all 0.25s ease;
         }
 
         .workspace-card.wide-mode {
-            max-width: 620px;
+            max-width: 600px;
         }
 
         .mode-toggle-bar {
             display: flex;
-            background: rgba(8, 11, 24, 0.85);
-            border: 1px solid var(--border-glass);
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
             border-radius: 14px;
             padding: 4px;
-            margin-bottom: 18px;
+            margin-bottom: 14px;
             gap: 4px;
         }
 
         .mode-btn {
             flex: 1;
-            padding: 10px 14px;
+            padding: 8px 12px;
             border-radius: 10px;
             border: none;
             background: transparent;
-            color: var(--text-dim);
-            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-size: 0.88rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.2s;
         }
 
         .mode-btn.active {
-            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
             color: #ffffff;
-            box-shadow: 0 2px 10px rgba(99, 102, 241, 0.35);
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
         }
 
+        /* Calculator Display */
         .calc-display {
-            background: rgba(8, 11, 24, 0.95);
-            border: 1px solid rgba(86, 98, 160, 0.35);
-            border-radius: 20px;
-            padding: 18px 22px;
-            margin-bottom: 20px;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 14px 18px;
+            margin-bottom: 14px;
             text-align: right;
-            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
+            box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.15);
         }
 
         .calc-expression {
-            min-height: 24px;
-            font-size: 1.1rem;
-            color: #8b99bd;
+            min-height: 22px;
+            font-size: 1.05rem;
+            color: var(--text-muted);
             font-family: 'JetBrains Mono', monospace;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -301,103 +404,108 @@
         }
 
         .calc-result {
-            font-size: 2.85rem;
-            font-weight: 700;
-            color: #ffffff;
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--text-main);
             font-family: 'JetBrains Mono', monospace;
             overflow-x: auto;
             white-space: nowrap;
             scrollbar-width: none;
-            margin-top: 6px;
-            line-height: 1.2;
-            text-shadow: 0 0 16px rgba(192, 132, 252, 0.6);
+            margin-top: 2px;
+            line-height: 1.15;
         }
 
         .calc-result::-webkit-scrollbar { display: none; }
 
+        /* Keypad Grids */
         .keypad-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 12px;
+            gap: 10px;
         }
 
         .scientific-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 10px;
-            margin-bottom: 12px;
+            gap: 8px;
+            margin-bottom: 10px;
         }
 
         .btn {
             border: 1px solid var(--btn-num-border);
-            border-radius: 18px;
+            border-radius: 16px;
             height: 62px;
-            font-size: 1.45rem;
-            font-weight: 600;
-            color: var(--text-main);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--btn-num-text);
             background: var(--btn-num-bg);
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.12s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+            transition: transform 0.1s ease, background 0.15s ease, box-shadow 0.15s ease;
+            box-shadow: var(--shadow-btn);
+            user-select: none;
         }
 
         .btn:hover { 
-            background: rgba(35, 46, 92, 0.95); 
+            background: var(--btn-num-hover); 
             transform: translateY(-2px);
         }
-        .btn:active { transform: scale(0.96); }
+
+        .btn:active { 
+            transform: translateY(2px) scale(0.95); 
+        }
 
         .btn-sci {
-            height: 48px;
-            font-size: 1rem;
-            background: var(--btn-sci);
-            border-color: var(--btn-sci-border);
-            color: #cbd5e1;
-            border-radius: 14px;
-        }
-        .btn-sci:hover {
-            background: rgba(49, 65, 122, 0.95);
-            color: #fff;
+            height: 46px;
+            font-size: 0.95rem;
+            background: var(--btn-sci-bg);
+            color: var(--btn-sci-text);
+            border-radius: 12px;
+            font-weight: 700;
         }
 
         .btn-fn {
-            background: var(--btn-fn);
-            border-color: var(--btn-fn-border);
-            color: #fff;
-        }
-        .btn-op { 
-            background: var(--btn-op); 
-            border-color: var(--btn-op-border);
-            color: #fff;
-        }
-        .btn-del {
-            background: var(--btn-del);
-            border-color: var(--btn-del-border);
-            color: #fff;
-        }
-        .btn-ac { 
-            background: var(--btn-ac); 
-            border-color: var(--btn-ac-border);
-            color: #fff;
-        }
-        .btn-equal { 
-            background: var(--btn-equal); 
-            border-color: var(--btn-equal-border);
-            color: #fff;
-            box-shadow: 0 0 20px rgba(124, 58, 237, 0.4);
+            background: var(--btn-fn-bg);
+            color: var(--btn-fn-text);
         }
 
-        /* Calculation History Panel Styling */
+        .btn-op { 
+            background: var(--btn-op-bg); 
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-del {
+            background: var(--btn-del-bg);
+            color: #ffffff;
+            border: none;
+            font-size: 1.15rem;
+        }
+
+        .btn-ac { 
+            background: var(--btn-ac-bg); 
+            color: #ffffff;
+            border: none;
+            font-size: 1.15rem;
+        }
+
+        .btn-equal { 
+            background: var(--btn-eq-bg); 
+            color: #ffffff;
+            border: none;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        }
+
+        /* Calculation History Panel */
         .history-panel {
-            background: rgba(8, 11, 24, 0.9);
-            border: 1px solid var(--border-glass);
-            border-radius: 18px;
-            padding: 16px;
-            margin-top: 18px;
-            max-height: 180px;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 12px 14px;
+            margin-top: 14px;
+            max-height: 145px;
             overflow-y: auto;
         }
 
@@ -405,176 +513,253 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
-            font-size: 0.85rem;
-            color: var(--text-dim);
+            margin-bottom: 8px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
             font-weight: 700;
             text-transform: uppercase;
         }
 
         .clear-history-btn {
-            background: transparent;
-            border: none;
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.3);
             color: #ef4444;
+            padding: 3px 8px;
+            border-radius: 6px;
             cursor: pointer;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 700;
-        }
-
-        .clear-history-btn:hover {
-            text-decoration: underline;
         }
 
         .history-list {
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 5px;
         }
 
         .history-item {
             display: flex;
             justify-content: space-between;
-            font-size: 0.9rem;
-            color: #cbd5e1;
+            font-size: 0.88rem;
+            color: var(--text-main);
             font-family: 'JetBrains Mono', monospace;
             padding: 6px 10px;
-            background: rgba(22, 29, 58, 0.5);
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: 8px;
         }
 
         .history-empty {
             text-align: center;
-            color: var(--text-dim);
-            font-size: 0.85rem;
-            padding: 10px 0;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            padding: 6px 0;
             font-style: italic;
         }
 
+        /* Converters UI */
         .converter-body {
             display: flex;
             flex-direction: column;
-            gap: 18px;
+            gap: 14px;
+        }
+
+        .tool-badge {
+            background: var(--pk-badge-bg);
+            border: 1px solid var(--pk-badge-border);
+            color: var(--pk-badge-text);
+            padding: 8px 12px;
+            border-radius: 12px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-align: center;
         }
 
         .input-group {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 6px;
         }
 
         .input-label {
-            font-size: 0.88rem;
-            font-weight: 600;
-            color: var(--text-dim);
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--text-muted);
             text-transform: uppercase;
         }
 
         .input-row {
             display: flex;
-            gap: 10px;
+            gap: 8px;
         }
 
         .app-input {
-            flex: 1.4;
-            background: rgba(8, 11, 24, 0.95);
-            border: 1px solid var(--border-glass);
-            border-radius: 16px;
-            padding: 14px 18px;
-            color: #fff;
+            flex: 1.3;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 12px 14px;
+            color: var(--text-main);
             font-size: 1.25rem;
-            font-weight: 600;
+            font-weight: 700;
             outline: none;
             font-family: 'JetBrains Mono', monospace;
+            width: 100%;
         }
 
         .app-input:focus {
-            border-color: #a855f7;
-            box-shadow: 0 0 15px var(--accent-glow);
+            border-color: var(--brand-color);
         }
 
         .app-select {
             flex: 1.2;
-            background: #141b36;
-            border: 1px solid var(--border-glass);
-            border-radius: 16px;
-            padding: 14px 18px;
-            color: #fff;
-            font-size: 0.95rem;
-            font-weight: 600;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 12px;
+            color: var(--text-main);
+            font-size: 0.92rem;
+            font-weight: 700;
             outline: none;
             cursor: pointer;
         }
 
         .switch-icon {
             align-self: center;
-            background: rgba(22, 29, 60, 0.8);
-            border: 1px solid var(--border-glass);
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
             border-radius: 50%;
-            width: 44px;
-            height: 44px;
+            width: 42px;
+            height: 42px;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            color: #c084fc;
+            color: var(--brand-color);
             font-size: 1.15rem;
-            transition: all 0.25s ease;
+            font-weight: 800;
+            transition: transform 0.25s ease;
+            box-shadow: var(--shadow-btn);
         }
 
         .switch-icon:hover {
             transform: rotate(180deg);
-            background: rgba(35, 46, 92, 1);
         }
 
         .result-panel {
-            background: rgba(8, 11, 24, 0.95);
-            border: 1px dashed rgba(168, 85, 247, 0.5);
-            border-radius: 20px;
-            padding: 22px;
+            background: var(--panel-bg);
+            border: 2px dashed var(--brand-color);
+            border-radius: 18px;
+            padding: 18px;
             text-align: center;
-            margin-top: 6px;
         }
 
         .result-panel-subtitle {
-            font-size: 0.85rem;
-            color: var(--text-dim);
+            font-size: 0.82rem;
+            color: var(--text-muted);
             margin-bottom: 6px;
+            font-weight: 600;
         }
 
         .result-panel-value {
-            font-size: 1.85rem;
+            font-size: 2rem;
             font-weight: 800;
-            color: #c084fc;
+            color: var(--brand-color);
             font-family: 'JetBrains Mono', monospace;
             word-break: break-all;
-            text-shadow: 0 0 16px rgba(192, 132, 252, 0.5);
         }
 
-        /* SEO & Detailed Creator Bio Content Styling */
+        .quick-pk-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .quick-pk-box {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .quick-pk-box span {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .quick-pk-box strong {
+            font-size: 1rem;
+            color: var(--text-main);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Full Educational Content & Creator Bio Below Calculator */
         .seo-content {
             width: 100%;
-            max-width: 960px;
+            max-width: 980px;
             background: var(--card-bg);
-            border: 1px solid var(--border-glass);
+            border: 1px solid var(--border-color);
             border-radius: 28px;
-            padding: 42px 34px;
-            margin-bottom: 36px;
+            padding: 40px 32px;
+            margin-bottom: 30px;
             line-height: 1.85;
-            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-card);
         }
 
-        .seo-content h2 { font-size: 1.85rem; color: #fff; margin-bottom: 20px; }
-        .seo-content h3 { font-size: 1.35rem; color: #c084fc; margin: 32px 0 14px; }
-        .seo-content h4 { font-size: 1.1rem; color: #e2e8f0; margin: 20px 0 10px; }
-        .seo-content p { color: var(--text-dim); font-size: 0.98rem; margin-bottom: 16px; }
+        .seo-content h2 { font-size: 1.8rem; color: var(--text-main); margin-bottom: 18px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; }
+        .seo-content h3 { font-size: 1.35rem; color: var(--brand-color); margin: 32px 0 14px; }
+        .seo-content h4 { font-size: 1.1rem; color: var(--text-main); margin: 20px 0 10px; }
+        .seo-content p { color: var(--text-muted); font-size: 0.98rem; margin-bottom: 16px; }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            margin: 28px 0;
+        }
+
+        .feature-box {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .feature-box strong { display: block; margin-bottom: 8px; font-size: 1.08rem; }
+        .feature-box span { color: var(--text-muted); font-size: 0.94rem; line-height: 1.6; display: block; }
+
+        .formula-card {
+            background: var(--panel-bg);
+            border-left: 4px solid var(--accent-purple);
+            padding: 18px 22px;
+            border-radius: 0 14px 14px 0;
+            margin: 20px 0;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-main);
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
+        .faq-item {
+            margin-top: 18px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+
+        .faq-q { font-weight: 700; color: var(--text-main); font-size: 1.05rem; }
+        .faq-a { color: var(--text-muted); font-size: 0.95rem; margin-top: 6px; }
 
         .creator-box {
-            background: rgba(22, 29, 60, 0.7);
-            border: 1px solid rgba(168, 85, 247, 0.3);
-            border-radius: 20px;
+            background: var(--panel-bg);
+            border: 2px solid var(--brand-color);
+            border-radius: 22px;
             padding: 28px;
-            margin-bottom: 32px;
+            margin-top: 36px;
         }
 
         .creator-profile-header {
@@ -590,57 +775,19 @@
             height: 110px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #a855f7;
-            box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+            border: 3px solid var(--brand-color);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 18px;
-            margin: 28px 0;
-        }
-
-        .feature-box {
-            background: rgba(22, 29, 60, 0.55);
-            border: 1px solid rgba(86, 98, 160, 0.28);
-            border-radius: 16px;
-            padding: 20px;
-        }
-
-        .feature-box strong { color: #fff; display: block; margin-bottom: 8px; font-size: 1.1rem; }
-        .feature-box span { color: var(--text-dim); font-size: 0.94rem; line-height: 1.6; display: block; }
-
-        .formula-card {
-            background: rgba(8, 11, 24, 0.9);
-            border-left: 4px solid #a855f7;
-            padding: 18px 22px;
-            border-radius: 0 14px 14px 0;
-            margin: 20px 0;
-            font-family: 'JetBrains Mono', monospace;
-            color: #c084fc;
-            font-size: 0.92rem;
-            line-height: 1.7;
-        }
-
-        .faq-item {
-            margin-top: 18px;
-            border-bottom: 1px solid rgba(86, 98, 160, 0.2);
-            padding-bottom: 16px;
-        }
-
-        .faq-q { font-weight: 700; color: #fff; font-size: 1.05rem; }
-        .faq-a { color: var(--text-dim); font-size: 0.95rem; margin-top: 6px; }
-
-        /* Footer organized for Google AdSense Policy Compliance */
+        /* Footer */
         footer {
             width: 100%;
-            max-width: 960px;
+            max-width: 980px;
             text-align: center;
-            padding: 30px 16px;
+            padding: 28px 16px;
             font-size: 0.9rem;
-            color: var(--text-dim);
-            border-top: 1px solid rgba(86, 98, 160, 0.2);
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
         }
 
         .footer-nav {
@@ -648,48 +795,70 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 22px;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
         .footer-nav a {
-            color: var(--text-dim);
+            color: var(--text-muted);
             text-decoration: none;
-            cursor: pointer;
+            font-weight: 600;
             transition: color 0.2s;
-            font-weight: 500;
         }
 
-        .footer-nav a:hover { color: #c084fc; }
+        .footer-nav a:hover { color: var(--brand-color); }
+
+        @media (max-width: 640px) {
+            .nav-links { display: none; }
+            header { padding: 10px 14px; }
+            .brand-logo span { font-size: 0.98rem; }
+            .main-heading { font-size: 0.88rem; }
+            .tab-btn { padding: 8px 11px; font-size: 0.8rem; }
+            .workspace-card { padding: 15px; border-radius: 22px; }
+            .btn { height: 58px; font-size: 1.35rem; }
+            .calc-result { font-size: 2.35rem; }
+            .input-row { flex-direction: column; }
+            .seo-content { padding: 26px 18px; }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <a href="index.html" class="brand-logo">
-        <img src="muhammad-zahid-mr-zee.jpg" alt="Mr. Zee Logo">
+        <img src="muhammad-zahid-mr-zee.jpg" alt="Muhammad Zahid Mr Zee Creator Logo">
         <span>Smart Calculator All-In-One</span>
     </a>
-    <nav class="nav-links">
-        <a onclick="switchTab('calc')">Calculator</a>
-        <a onclick="switchTab('currency')">Currency</a>
-        <a onclick="switchTab('area')">Land Area</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <div class="header-right">
+        <nav class="nav-links">
+            <a onclick="switchTab('calc')">Calculator</a>
+            <a onclick="switchTab('area')">Marla</a>
+            <a onclick="switchTab('weight')">Tola Gold</a>
+            <a onclick="switchTab('currency')">Currency</a>
+            <a href="#about-creator">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">
+            ☀️ Light Mode
+        </button>
+    </div>
 </header>
+
+<h1 class="main-heading">
+    <strong>Free Online Calculator Pakistan</strong> | Marla, Tola, Currency & Scientific Calculator
+</h1>
 
 <nav class="tabs-container">
     <button class="tab-btn active" id="btn-tab-calc" onclick="switchTab('calc')">🧮 Calculator</button>
-    <button class="tab-btn" id="btn-tab-currency" onclick="switchTab('currency')">💱 Live Currency</button>
+    <button class="tab-btn pk-special" id="btn-tab-area" onclick="switchTab('area')">🏡 Area (Marla / Kanal)</button>
+    <button class="tab-btn pk-special" id="btn-tab-weight" onclick="switchTab('weight')">⚖️ Weight + Tola (Gold)</button>
+    <button class="tab-btn pk-special" id="btn-tab-currency" onclick="switchTab('currency')">💱 Live Currency (PKR)</button>
     <button class="tab-btn" id="btn-tab-length" onclick="switchTab('length')">📏 Length (KM / Feet)</button>
-    <button class="tab-btn" id="btn-tab-weight" onclick="switchTab('weight')">⚖️ Weight (KG / Lbs)</button>
-    <button class="tab-btn" id="btn-tab-area" onclick="switchTab('area')">🏡 Area (Marla / Kanal)</button>
     <button class="tab-btn" id="btn-tab-temp" onclick="switchTab('temp')">🌡️ Temp (°C / °F)</button>
 </nav>
 
 <main class="workspace-card" id="mainWorkspace">
 
-    <!-- Math & Scientific Calculator Interface with History -->
+    <!-- 1. Math & Scientific Calculator Interface with History -->
     <section id="tab-calc">
         <div class="mode-toggle-bar">
             <button type="button" class="mode-btn active" id="btnModeBasic" onclick="setCalcMode('basic')">Basic</button>
@@ -756,6 +925,7 @@
 
     <!-- 2. Live Currency Converter -->
     <section id="tab-currency" class="converter-body" style="display:none;">
+        <div class="tool-badge">💱 Live Currency Converter (PKR & Global Exchange Rates)</div>
         <div class="input-group">
             <label class="input-label">Amount</label>
             <div class="input-row">
@@ -842,20 +1012,21 @@
         </div>
     </section>
 
-    <!-- 4. Weight Converter -->
+    <!-- 4. Weight + Tola (Gold) Converter -->
     <section id="tab-weight" class="converter-body" style="display:none;">
+        <div class="tool-badge">⚖️ Tola to Gram Gold Converter & Commercial Weight Calculator</div>
         <div class="input-group">
             <label class="input-label">Enter Weight</label>
             <div class="input-row">
                 <input type="number" id="wtInput" class="app-input" value="1" oninput="convertWeight()">
                 <select id="wtFrom" class="app-select" onchange="convertWeight()">
-                    <option value="kg" selected>Kilograms (kg)</option>
+                    <option value="tola" selected>Tola (Gold)</option>
+                    <option value="kg">Kilograms (kg)</option>
                     <option value="g">Grams (g)</option>
                     <option value="mg">Milligrams (mg)</option>
                     <option value="lb">Pounds (lbs)</option>
                     <option value="oz">Ounces (oz)</option>
                     <option value="stone">Stones</option>
-                    <option value="tola">Tola (Gold)</option>
                 </select>
             </div>
         </div>
@@ -866,31 +1037,43 @@
             <label class="input-label">Converted Unit</label>
             <div class="input-row">
                 <select id="wtTo" class="app-select" style="flex:1;" onchange="convertWeight()">
-                    <option value="lb" selected>Pounds (lbs)</option>
+                    <option value="g" selected>Grams (g)</option>
+                    <option value="tola">Tola (Gold)</option>
                     <option value="kg">Kilograms (kg)</option>
-                    <option value="g">Grams (g)</option>
+                    <option value="lb">Pounds (lbs)</option>
                     <option value="mg">Milligrams (mg)</option>
                     <option value="oz">Ounces (oz)</option>
                     <option value="stone">Stones</option>
-                    <option value="tola">Tola (Gold)</option>
                 </select>
             </div>
         </div>
 
         <div class="result-panel">
             <div class="result-panel-subtitle">Calculated Mass</div>
-            <div class="result-panel-value" id="wtResult">2.20462 lbs</div>
+            <div class="result-panel-value" id="wtResult">11.6638 G</div>
+        </div>
+
+        <div class="quick-pk-grid">
+            <div class="quick-pk-box">
+                <span>1 Tola Gold Equals</span>
+                <strong>11.6638 Grams</strong>
+            </div>
+            <div class="quick-pk-box">
+                <span>1 Troy Ounce Equals</span>
+                <strong>2.666 Tolas</strong>
+            </div>
         </div>
     </section>
 
-    <!-- 5. Area Converter -->
+    <!-- 5. Area (Marla / Kanal) Converter -->
     <section id="tab-area" class="converter-body" style="display:none;">
+        <div class="tool-badge">🏡 Pakistan Marla Calculator (225 sq ft Society & 272.25 sq ft Govt)</div>
         <div class="input-group">
             <label class="input-label">Enter Area</label>
             <div class="input-row">
                 <input type="number" id="areaInput" class="app-input" value="1" oninput="convertArea()">
                 <select id="areaFrom" class="app-select" onchange="convertArea()">
-                    <option value="marla225">Marla (225 sq ft - Society)</option>
+                    <option value="marla225" selected>Marla (225 sq ft - Society)</option>
                     <option value="marla272">Marla (272.25 sq ft - Govt/Revenue)</option>
                     <option value="kanal">Kanal (20 Marlas)</option>
                     <option value="sqft">Square Feet (sq ft)</option>
@@ -921,6 +1104,17 @@
         <div class="result-panel">
             <div class="result-panel-subtitle">Calculated Land Area</div>
             <div class="result-panel-value" id="areaResult">225 sq ft</div>
+        </div>
+
+        <div class="quick-pk-grid">
+            <div class="quick-pk-box">
+                <span>Society Standard (225 sq ft)</span>
+                <strong id="quickMarla225">225 sq ft</strong>
+            </div>
+            <div class="quick-pk-box">
+                <span>Revenue Standard (272.25 sq ft)</span>
+                <strong id="quickMarla272">272.25 sq ft</strong>
+            </div>
         </div>
     </section>
 
@@ -959,29 +1153,8 @@
 
 </main>
 
-<!-- Comprehensive Measurement, Scientific & Detailed Creator Bio Guide -->
+<!-- 100% Complete, Word-for-Word Measurement, Scientific, FAQ & Creator Bio Guide Below Calculator -->
 <article class="seo-content">
-    
-    <!-- Detailed Creator Profile Box -->
-    <div class="creator-box">
-        <div class="creator-profile-header">
-            <img src="muhammad-zahid-mr-zee.jpg" alt="Muhammad Zahid (Mr. Zee)" class="creator-img">
-            <div>
-                <h3 style="margin: 0 0 6px 0; color: #fff; font-size: 1.4rem;">About the Creator: Muhammad Zahid (Mr. Zee)</h3>
-                <p style="margin: 0; color: #c084fc; font-weight: 600; font-size: 0.95rem;">
-                    Digital Content Creator | AI Filmmaker | Web Developer | Certified Mechanical Draftsman
-                </p>
-            </div>
-        </div>
-        <div style="color: var(--text-dim); font-size: 0.96rem; line-height: 1.8;">
-            <p style="margin-bottom: 12px;">
-                <strong>Muhammad Zahid</strong>, professionally known as <strong>Mr. Zee</strong>, is a multidisciplinary Digital Content Creator, AI Filmmaker, Tech Analyst, Web Developer, and Certified Mechanical Draftsman originally hailing from <strong>Lodhran</strong>. He completed his Matriculation in Lodhran and Intermediate in Computer Science (ICS), building a strong technical foundation in software and technology. To expand his engineering expertise, he earned a formal <strong>2-Year Certification in Mechanical Drafting (Draftsman Mechanical) from Lahore</strong>, mastering AutoCAD, mechanical design, and commercial HVAC systems.
-            </p>
-            <p style="margin-bottom: 0;">
-                As the creator behind the YouTube channel <strong>ZeeTec (@zeetec1)</strong>, Mr. Zee pushes the boundaries of digital media by producing AI-generated short films, cinematic fantasy stories, smartphone advertisements, flagship tech leaks, and 3D concept renders using advanced tools like <strong>Seedance</strong> and <strong>Dola AI</strong>. Alongside video editing, thumbnail design, and SEO strategy, he developed the <strong>Smart Calculator All-in-One</strong> web platform to deliver fast, practical, and high-precision digital tools.
-            </p>
-        </div>
-    </div>
 
     <h2>Comprehensive Measurement, Scientific & Mathematical Guide</h2>
     
@@ -1036,7 +1209,7 @@
         Established during historical land settlement surveys and still codified in official governmental Land Revenue Department records (commonly known as Patwari or Fard records), one linear unit known as a <em>Karam</em> is defined as exactly 5.5 feet (66 inches). A square Karam is therefore equal to 5.5 × 5.5 = 30.25 square feet. Nine square Karams constitute one official Revenue Marla:
     </p>
     
-    <div class="formula-card" style="border-left-color: #38bdf8; color: #38bdf8;">
+    <div class="formula-card" style="border-left-color: #38bdf8;">
         • 1 Karam = 5.5 Linear Feet (66 Inches)<br>
         • 1 Square Karam = 30.25 Square Feet<br>
         • 1 Revenue Marla = 9 Square Karams = 272.25 Square Feet<br>
@@ -1049,7 +1222,7 @@
         In the mid-20th century, modern town planners, urban development authorities (such as LDA, CDA, and KDA), and private housing societies (including DHA and Bahria Town) adopted a rounded, grid-friendly measurement metric. Under this standard, 1 Marla was fixed at exactly 225 square feet (15 feet × 15 feet). In this framework:
     </p>
 
-    <div class="formula-card" style="border-left-color: #10b981; color: #10b981;">
+    <div class="formula-card" style="border-left-color: #10b981;">
         • 1 Society Marla = 225 Square Feet (approx. 25 Square Yards)<br>
         • 1 Society Kanal = 20 Marlas = 4,500 Square Feet<br>
         • Comparison: A 10-Marla plot under revenue standards measures 2,722.5 sq ft, whereas under private society standards it measures 2,250 sq ft (a variance of 472.5 sq ft).
@@ -1068,7 +1241,7 @@
         Temperature measurement standards correlate directly to the physical state of atomic motion. Depending on whether a thermal context is culinary, meteorological, or cryogenic, conversion equations require scale offsets:
     </p>
 
-    <div class="formula-card" style="border-left-color: #f59e0b; color: #f59e0b;">
+    <div class="formula-card" style="border-left-color: #f59e0b;">
         • Celsius to Fahrenheit: °F = (°C × 9/5) + 32<br>
         • Fahrenheit to Celsius: °C = (°F − 32) × 5/9<br>
         • Celsius to Kelvin: K = °C + 273.15
@@ -1118,6 +1291,27 @@
         <div class="faq-a">Once the web page is fully loaded inside your browser cache, the core operational arithmetic scripts reside within your browser memory, enabling normal operation even during temporary connection drops.</div>
     </div>
 
+    <!-- Complete Word-for-Word Creator Profile Box at the Bottom -->
+    <div class="creator-box" id="about-creator">
+        <div class="creator-profile-header">
+            <img src="muhammad-zahid-mr-zee.jpg" alt="Muhammad Zahid (Mr. Zee)" class="creator-img">
+            <div>
+                <h3 style="margin: 0 0 6px 0; color: var(--text-main); font-size: 1.4rem;">About the Creator: Muhammad Zahid (Mr. Zee)</h3>
+                <p style="margin: 0; color: var(--brand-color); font-weight: 600; font-size: 0.95rem;">
+                    Digital Content Creator | AI Filmmaker | Web Developer | Certified Mechanical Draftsman
+                </p>
+            </div>
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.96rem; line-height: 1.8;">
+            <p style="margin-bottom: 12px;">
+                <strong>Muhammad Zahid</strong>, professionally known as <strong>Mr. Zee</strong>, is a multidisciplinary Digital Content Creator, AI Filmmaker, Tech Analyst, Web Developer, and Certified Mechanical Draftsman originally hailing from <strong>Lodhran</strong>. He completed his Matriculation in Lodhran and Intermediate in Computer Science (ICS), building a strong technical foundation in software and technology. To expand his engineering expertise, he earned a formal <strong>2-Year Certification in Mechanical Drafting (Draftsman Mechanical) from Lahore</strong>, mastering AutoCAD, mechanical design, and commercial HVAC systems.
+            </p>
+            <p style="margin-bottom: 0;">
+                As the creator behind the YouTube channel <strong>ZeeTec (@zeetec1)</strong>, Mr. Zee pushes the boundaries of digital media by producing AI-generated short films, cinematic fantasy stories, smartphone advertisements, flagship tech leaks, and 3D concept renders using advanced tools like <strong>Seedance</strong> and <strong>Dola AI</strong>. Alongside video editing, thumbnail design, and SEO strategy, he developed the <strong>Smart Calculator All-in-One</strong> web platform to deliver fast, practical, and high-precision digital tools.
+            </p>
+        </div>
+    </div>
+
 </article>
 
 <footer>
@@ -1131,7 +1325,32 @@
 </footer>
 
 <script>
-    // Tab Switcher
+    // 1. Dark Mode / Light Mode Theme Switcher
+    function toggleTheme() {
+        var htmlEl = document.documentElement;
+        var currentTheme = htmlEl.getAttribute('data-theme') || 'dark';
+        var newTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+        htmlEl.setAttribute('data-theme', newTheme);
+        localStorage.setItem('calc_theme', newTheme);
+        updateThemeButton(newTheme);
+    }
+
+    function updateThemeButton(theme) {
+        var btn = document.getElementById('themeToggleBtn');
+        if (!btn) return;
+        if (theme === 'light') {
+            btn.innerHTML = '🌙 Dark Mode';
+        } else {
+            btn.innerHTML = '☀️ Light Mode';
+        }
+    }
+
+    (function initTheme() {
+        var savedTheme = localStorage.getItem('calc_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+
+    // 2. Tab Switcher
     function switchTab(tabId) {
         var sections = document.querySelectorAll('.workspace-card > section');
         for (var i = 0; i < sections.length; i++) {
@@ -1152,7 +1371,7 @@
         }
     }
 
-    // Basic vs Scientific Mode
+    // 3. Basic vs Scientific Mode
     function setCalcMode(mode) {
         var sciGrid = document.getElementById('sciGrid');
         var card = document.getElementById('mainWorkspace');
@@ -1172,7 +1391,7 @@
         }
     }
 
-    // Calculator Logic & History
+    // 4. Calculator Logic & History
     var calcInput = '0';
     var calcPrev = '';
     var calcHistory = [];
@@ -1184,7 +1403,7 @@
 
     function addHistory(expression, result) {
         calcHistory.unshift({ expr: expression, res: result });
-        if (calcHistory.length > 10) calcHistory.pop(); // Keep last 10 entries
+        if (calcHistory.length > 10) calcHistory.pop();
         renderHistory();
     }
 
@@ -1225,11 +1444,7 @@
 
     function calcToggleSign() {
         if (calcInput === '0' || calcInput === 'Error') return;
-        if (calcInput.charAt(0) === '-') {
-            calcInput = calcInput.substring(1);
-        } else {
-            calcInput = '-' + calcInput;
-        }
+        calcInput = (calcInput.charAt(0) === '-') ? calcInput.substring(1) : '-' + calcInput;
         updateCalcDisplay();
     }
 
@@ -1273,11 +1488,7 @@
     }
 
     function calcBack() {
-        if (calcInput.length > 1) {
-            calcInput = calcInput.slice(0, -1);
-        } else {
-            calcInput = '0';
-        }
+        calcInput = (calcInput.length > 1) ? calcInput.slice(0, -1) : '0';
         updateCalcDisplay();
     }
 
@@ -1301,7 +1512,7 @@
         }
     }
 
-    // Keyboard support
+    // Keyboard Support
     window.addEventListener('keydown', function(e) {
         var calcSec = document.getElementById('tab-calc');
         if (calcSec && calcSec.style.display !== 'none') {
@@ -1314,7 +1525,7 @@
         }
     });
 
-    // Currency API
+    // 5. Currency API
     var exchangeRates = {
         USD: 1, PKR: 278.50, INR: 83.95, EUR: 0.92, GBP: 0.78, SAR: 3.75, AED: 3.67, CAD: 1.36, AUD: 1.52
     };
@@ -1354,7 +1565,7 @@
         convertCurrency();
     }
 
-    // Units
+    // 6. Units
     var lengthRatios = { m: 1, km: 1000, cm: 0.01, mm: 0.001, ft: 0.3048, in: 0.0254, yd: 0.9144, mi: 1609.344 };
     function convertLength() {
         var val = parseFloat(document.getElementById('lenInput').value) || 0;
@@ -1364,7 +1575,7 @@
         document.getElementById('lenResult').textContent = parseFloat(result.toFixed(6)) + ' ' + to.toUpperCase();
     }
 
-    var weightRatios = { kg: 1, g: 0.001, mg: 0.000001, lb: 0.45359237, oz: 0.0283495, stone: 6.35029, tola: 0.0116638 };
+    var weightRatios = { kg: 1, g: 0.001, mg: 0.000001, lb: 0.45359237, oz: 0.0283495, stone: 6.35029, tola: 0.0116638038 };
     function convertWeight() {
         var val = parseFloat(document.getElementById('wtInput').value) || 0;
         var from = document.getElementById('wtFrom').value;
@@ -1380,6 +1591,11 @@
         var to = document.getElementById('areaTo').value;
         var result = (val * areaRatios[from]) / areaRatios[to];
         document.getElementById('areaResult').textContent = parseFloat(result.toFixed(4)) + ' ' + to;
+
+        var societySqft = val * 225;
+        var govtSqft = val * 272.25;
+        document.getElementById('quickMarla225').textContent = societySqft.toLocaleString() + ' sq ft';
+        document.getElementById('quickMarla272').textContent = govtSqft.toLocaleString() + ' sq ft';
     }
 
     function convertTemp() {
@@ -1403,6 +1619,8 @@
     }
 
     window.onload = function() {
+        var savedTheme = localStorage.getItem('calc_theme') || 'dark';
+        updateThemeButton(savedTheme);
         document.getElementById('currentYear').textContent = new Date().getFullYear();
         fetchLiveCurrencyRates();
         convertLength();
